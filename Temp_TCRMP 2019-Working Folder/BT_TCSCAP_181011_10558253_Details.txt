@@ -1,0 +1,67 @@
+﻿Details
+Series: Temp, °C
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10558253
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 08/13/14 09:58:23 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Temperature, °C
+		• Launch Name: TCSCAP_181011_10558253
+		• Deployment Number: 7
+		• Launch Time: 10/10/18 04:07:18 PM GMT-04:00
+		• Logging Interval: 00 Hr 00 Min 00 Sec
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.43 Volts
+		• Launching Program: HOBOware Pro-3.7.14_0315_0933_Mac
+	Series Statistics
+		• Samples: 10,255
+		• Max: 30.117
+		• Min: 18.747
+		• Avg: 27.749
+		• Std Dev (σ): 1.524
+		• First Sample Time: 10/11/18 10:00:00 AM GMT-04:00
+		• Last Sample Time: 10/11/18 10:00:00 AM GMT-04:00
+Event Type: Coupler Detached
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10558253
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 08/13/14 09:58:23 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Coupler Detached
+		• Launch Name: TCSCAP_181011_10558253
+		• Deployment Number: 7
+		• Launch Time: 10/10/18 04:07:18 PM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.43 Volts
+	Series Statistics
+		• Samples: 1
+		• First Sample Time: 10/11/18 10:00:00 AM GMT-04:00
+		• Last Sample Time: 10/11/18 10:00:00 AM GMT-04:00
+Event Type: End Of File
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10558253
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 08/13/14 09:58:23 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: End Of File
+		• Launch Name: TCSCAP_181011_10558253
+		• Deployment Number: 7
+		• Launch Time: 10/10/18 04:07:18 PM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.43 Volts
+	Series Statistics
+		• Samples: 1
+		• First Sample Time: 10/11/18 10:00:00 AM GMT-04:00
+		• Last Sample Time: 10/11/18 10:00:00 AM GMT-04:00

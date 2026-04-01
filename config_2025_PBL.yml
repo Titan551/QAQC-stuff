@@ -1,0 +1,6 @@
+deployment_log_path: D:\UVI Dropbox\SMITH LAB TEAM FOLDER\TCRMP\TCRMP_temperature\TCRMP_temperature_home_July2025\Temperature_UVI_deployment_log.csv
+os_path: D:\UVI Dropbox\SMITH LAB TEAM FOLDER\TCRMP\TCRMP_temperature\TCRMP_temperature_home_July2025\2025\PBL
+01_hobo_out_path: D:/UVI Dropbox/SMITH LAB TEAM FOLDER/TCRMP/TCRMP_temperature/TCRMP_temperature_home_July2025/2025/PBL/01_HOBO_OUT
+02_plots_path: D:/UVI Dropbox/SMITH LAB TEAM FOLDER/TCRMP/TCRMP_temperature/TCRMP_temperature_home_July2025/2025/PBL/02_PLOTS
+03_toreview_path: D:/UVI Dropbox/SMITH LAB TEAM FOLDER/TCRMP/TCRMP_temperature/TCRMP_temperature_home_July2025/2025/PBL/03_TOREVIEW
+04_processed_path: D:/UVI Dropbox/SMITH LAB TEAM FOLDER/TCRMP/TCRMP_temperature/TCRMP_temperature_home_July2025/2025/PBL/04_PROCESSED

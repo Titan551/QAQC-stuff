@@ -1,0 +1,67 @@
+DATASET description metadata for TCRMP [Version: June 2011] Benthic temperature record from “Seahorse Cottage Shoal”, St. Thomas, USVI from October 4, 2022 to October 30, 2023 
+Originating PI name and contact information:  
+Tyler B. Smith 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1394 
+Email: tsmith@uvi.edu 
+Ocean data manager contact information: 
+Vanessa McKague 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1378 
+Email: vwright@uvi.edu 
+Dataset Name:  
+BT_TCSHCS_2210_2310
+Dataset description: 
+Project:  
+The United States Virgin Islands Territorial Coral Reef Monitoring Program 
+Funding:  
+Department of Planning and Natural Resources, NOAA Coral Reef Conservation Program 
+Cruise or Deployment, if applicable:  
+Location:  
+Coordinates: 18.29467, -64.86750; depth: 20 m 
+Parameter names, definitions and units:  
+Number: Sequential number of the datum 
+Date Time UTC 4: Date and time in UTC-4 
+Temperature: Temperature in degrees Celsius
+Sampling and Analytical Methodology:  
+Sensor- HOBO U22-001 Water Temp (Onset Computer Corporation, Bourne, MA, USA).  Serial number- 20925875, 20962629
+Isoloated midshelf orbicellid bank reef with high coral cover. Sensor at beginning of transect #1 under coral head. 
+Data Processing:  
+Data were offloaded with portable base station to laptop. Data were exported to Microsoft Excel and  visually inspected for unusual deviations. Data taken outside of deployment, during deployment or  retrieval, were snipped from the record by visual inspection of the data. Time stamps were modified  as zone UTC-4 and adjusted as necessary. Records from probe 1 and probe 2 were combined into a  single CSV file. 
+Access restrictions: 
+None 
+Related files and references:  
+Details
+Series: Temp, *C
+Devices
+Device Info
+- Product: HOBO U22-001 Water Temp
+- Serial Number: 20925875
+- Version Number: 1.06
+- Manufacturer: Onset Computer Corporation
+- Device Memory: 65536
+- Header Created: 09/17/20 09:44:47 AM GMT-04:00
+Deployment Info
+- Full Series Name: Temperature, *C
+- Launch Name: BT_TCSHCH_2209
+- Deployment Number: 5
+- Launch Time: 09/14/22 09:19:35 PM GMT-04:00
+- Logging Interval: 00 Hr 15 Min 00 Sec
+- Launch GMT Offset: -4 Hr 0 Min
+- Battery at Launch: 3.46 Volts
+- Launching Program: HOBOware -3.7.25_0811_1019_Mac
+Series Statistics
+- Samples: 40,445
+- Max: 33.861
+- Min: 21.127
+- Avg: 28.011
+- Std Dev (?): 1.768
+- First Sample Time: 09/26/22 08:00:00 AM GMT-04:00
+- Last Sample Time: 11/21/23 03:00:00 PM GMT-04:00
+Created by: Cole Sheeley, June 14, 2024

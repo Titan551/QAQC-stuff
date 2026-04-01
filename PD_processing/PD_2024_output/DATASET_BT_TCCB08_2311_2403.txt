@@ -1,0 +1,68 @@
+DATASET description metadata for TCRMP [Version: June 2011] Benthic temperature record from “Cane Bay”, St. Thomas, USVI from November 12, 2023 to March 13, 2024 
+Originating PI name and contact information:  
+Tyler B. Smith 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1394 
+Email: tsmith@uvi.edu 
+Ocean data manager contact information: 
+Vanessa McKague 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1378 
+Email: vwright@uvi.edu 
+Dataset Name:  
+BT_TCCB08_2311_2403
+Dataset description: 
+Project:  
+The United States Virgin Islands Territorial Coral Reef Monitoring Program 
+Funding:  
+Department of Planning and Natural Resources, NOAA Coral Reef Conservation Program 
+Cruise or Deployment, if applicable:  
+Location:  
+Coordinates: 17.77388, -64.81350; depth: 10 m 
+Parameter names, definitions and units:  
+Number: Sequential number of the datum 
+Date Time UTC 4: Date and time in UTC-4 
+Temperature: Temperature in degrees Celsius
+Sampling and Analytical Methodology:  
+Sensor- HOBO U22-001 Water Temp (Onset Computer Corporation, Bourne, MA, USA).  Serial number- 20733094, 21828443
+Orbicella reef near a dive mooring. Sensor at end of transect #1 under large head of Orbicella annularis. 
+Data Processing:  
+Data were offloaded with portable base station to laptop. Data were exported to Microsoft Excel and  visually inspected for unusual deviations. Data taken outside of deployment, during deployment or  retrieval, were snipped from the record by visual inspection of the data. Time stamps were modified  as zone UTC-4 and adjusted as necessary. Records from probe 1 and probe 2 were combined into a  single CSV file. 
+Access restrictions: 
+None 
+Related files and references:  
+Details
+Series: Temp, *C (Cane Bay 9m )
+Devices
+Device Info
+- Product: HOBO U22-001 Water Temp
+- Serial Number: 20733094
+- Version Number: 1.06
+- Manufacturer: Onset Computer Corporation
+- Device Memory: 65536
+- Header Created: 10/29/19 09:11:17 AM GMT-04:00
+Deployment Info
+- Full Series Name: Temperature, *C
+- Sensor Label: Cane Bay 9m
+- Launch Name: BT_TCCB08_2311_a
+- Deployment Number: 7
+- Launch Time: 11/07/23 12:42:28 PM GMT-04:00
+- Logging Interval: 00 Hr 15 Min 00 Sec
+- Launch GMT Offset: -4 Hr 0 Min
+- Battery at Launch: 3.43 Volts
+- Launching Program: HOBOware -3.7.26_0505_1156_Mac
+Series Statistics
+- Samples: 14,621
+- Max: 32.924
+- Min: 18.723
+- Avg: 26.913
+- Std Dev (?): 2.032
+- First Sample Time: 11/09/23 08:00:00 AM GMT-04:00
+- Last Sample Time: 04/09/24 03:00:00 PM GMT-04:00
+Created by: Cole Sheeley, June 14, 2024

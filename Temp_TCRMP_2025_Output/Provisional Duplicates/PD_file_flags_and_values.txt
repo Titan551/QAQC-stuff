@@ -1,0 +1,7 @@
+TCBKPT 2402, Number of 'True' values flagged: 26, Temperature Difference > 0.4 Count: 1
+  Values of Temperature Difference > 0.4: [0.564]
+TCCB08 2403, Number of 'True' values flagged: 99, Temperature Difference > 0.4 Count: 0
+TCFLTC 2402, Number of 'True' values flagged: 28, Temperature Difference > 0.4 Count: 1
+  Values of Temperature Difference > 0.4: [0.454]
+TCSHCS 2403, Number of 'True' values flagged: 22, Temperature Difference > 0.4 Count: 7
+  Values of Temperature Difference > 0.4: [0.707, 1.137, 2.352, 2.08, 2.813, 1.666, 0.677]

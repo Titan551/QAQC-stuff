@@ -1,0 +1,68 @@
+﻿Details
+Series: Temp, *C (Jacks Bay )
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20719642
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 10/08/19, 10:18:25 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Temperature, *C
+		- Sensor Label: Jacks Bay 
+		- Launch Name: BT_TCJCKB_2111_
+		- Deployment Number: 5
+		- Launch Time: 11/09/21, 01:09:21 PM GMT-04:00
+		- Logging Interval: 00 Hr 00 Min 00 Sec
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.46 Volts
+		- Launching Program: HOBOware -3.7.22_0127_1217_Mac
+	Series Statistics
+		- Samples: 9,387
+		- Max: 35.022
+		- Min: 18.438
+		- Avg: 27.710
+		- Std Dev (σ): 1.477
+		- First Sample Time: 11/11/21, 09:00:00 AM GMT-04:00
+		- Last Sample Time: 11/11/21, 09:00:00 AM GMT-04:00
+Event Type: Coupler Detached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20719642
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 10/08/19, 10:18:25 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Detached
+		- Launch Name: BT_TCJCKB_2111_
+		- Deployment Number: 5
+		- Launch Time: 11/09/21, 01:09:21 PM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.46 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 11/11/21, 09:00:00 AM GMT-04:00
+		- Last Sample Time: 11/11/21, 09:00:00 AM GMT-04:00
+Event Type: End Of File
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20719642
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 10/08/19, 10:18:25 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: End Of File
+		- Launch Name: BT_TCJCKB_2111_
+		- Deployment Number: 5
+		- Launch Time: 11/09/21, 01:09:21 PM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.46 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 11/11/21, 09:00:00 AM GMT-04:00
+		- Last Sample Time: 11/11/21, 09:00:00 AM GMT-04:00

@@ -1,0 +1,67 @@
+DATASET description metadata for TCRMP [Version: June 2011] Benthic temperature record from “Mutton Snapper FSA 40m”, St. Thomas, USVI from October 22, 2022 to November 10, 2023 
+Originating PI name and contact information:  
+Tyler B. Smith 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1394 
+Email: tsmith@uvi.edu 
+Ocean data manager contact information: 
+Vanessa McKague 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1378 
+Email: vwright@uvi.edu 
+Dataset Name:  
+BT_TCMT40_2210_2311
+Dataset description: 
+Project:  
+The United States Virgin Islands Territorial Coral Reef Monitoring Program 
+Funding:  
+Department of Planning and Natural Resources, NOAA Coral Reef Conservation Program 
+Cruise or Deployment, if applicable:  
+Location:  
+Coordinates: 17.63660, -64.86240; depth: 40 m 
+Parameter names, definitions and units:  
+Number: Sequential number of the datum 
+Date Time UTC 4: Date and time in UTC-4 
+Temperature: Temperature in degrees Celsius
+Sampling and Analytical Methodology:  
+Sensor- HOBO U22-001 Water Temp (Onset Computer Corporation, Bourne, MA, USA).  Serial number- 21445105, 21445086
+Mesophotic temperature monitoring location just offshelf from Mutton Snapper Site. Sensor offshelf from transect #1 found by following groove to drop off.  Sensor under coral head to the east and downslope. 
+Data Processing:  
+Data were offloaded with portable base station to laptop. Data were exported to Microsoft Excel and  visually inspected for unusual deviations. Data taken outside of deployment, during deployment or  retrieval, were snipped from the record by visual inspection of the data. Time stamps were modified  as zone UTC-4 and adjusted as necessary. Records from probe 1 and probe 2 were combined into a  single CSV file. 
+Access restrictions: 
+None 
+Related files and references:  
+Details
+Series: Temp, *C
+Devices
+Device Info
+- Product: HOBO U22-001 Water Temp
+- Serial Number: 21445105
+- Version Number: 1.06
+- Manufacturer: Onset Computer Corporation
+- Device Memory: 65536
+- Header Created: 06/23/22 02:17:33 PM GMT-04:00
+Deployment Info
+- Full Series Name: Temperature, *C
+- Launch Name: BT_TCMT40_2210_a
+- Deployment Number: 2
+- Launch Time: 10/14/22 12:13:23 PM GMT-04:00
+- Logging Interval: 00 Hr 15 Min 00 Sec
+- Launch GMT Offset: -4 Hr 0 Min
+- Battery at Launch: 3.54 Volts
+- Launching Program: HOBOware -3.7.25_0811_1019_Mac
+Series Statistics
+- Samples: 38,428
+- Max: 37.949
+- Min: 20.079
+- Avg: 27.960
+- Std Dev (?): 1.589
+- First Sample Time: 10/17/22 08:00:00 AM GMT-04:00
+- Last Sample Time: 11/21/23 02:45:00 PM GMT-04:00
+Created by: Cole Sheeley, June 14, 2024

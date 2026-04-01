@@ -1,0 +1,128 @@
+﻿Details
+Series: Temp, *C (Canal de Afuera Reef 3m PCAR03)
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765869
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:53:09 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Temperature, *C
+		- Sensor Label: Canal de Afuera Reef 3m PCAR03
+		- Launch Name: BT_PCAR03_2306_b
+		- Deployment Number: 4
+		- Launch Time: 06/09/23 10:05:56 AM GMT-04:00
+		- Logging Interval: 00 Hr 30 Min 00 Sec
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.48 Volts
+		- Launching Program: HOBOware -3.7.25_0811_1019_Mac
+	Series Statistics
+		- Samples: 31,066
+		- Max: 39.234
+		- Min: 19.698
+		- Avg: 29.160
+		- Std Dev (σ): 1.218
+		- First Sample Time: 06/13/23 09:15:00 AM GMT-04:00
+		- Last Sample Time: 03/21/25 01:45:00 PM GMT-04:00
+Event Type: Coupler Detached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765869
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:53:09 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Detached
+		- Launch Name: BT_PCAR03_2306_b
+		- Deployment Number: 4
+		- Launch Time: 06/09/23 10:05:56 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.48 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 06/13/23 09:15:00 AM GMT-04:00
+		- Last Sample Time: 06/13/23 09:15:00 AM GMT-04:00
+Event Type: Coupler Attached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765869
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:53:09 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Attached
+		- Launch Name: BT_PCAR03_2306_b
+		- Deployment Number: 4
+		- Launch Time: 06/09/23 10:05:56 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.48 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 03/21/25 01:59:13 PM GMT-04:00
+		- Last Sample Time: 03/21/25 01:59:13 PM GMT-04:00
+Event Type: Host Connected
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765869
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:53:09 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Host Connected
+		- Launch Name: BT_PCAR03_2306_b
+		- Deployment Number: 4
+		- Launch Time: 06/09/23 10:05:56 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.48 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 03/21/25 01:59:13 PM GMT-04:00
+		- Last Sample Time: 03/21/25 01:59:13 PM GMT-04:00
+Event Type: Stopped
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765869
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:53:09 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Stopped
+		- Launch Name: BT_PCAR03_2306_b
+		- Deployment Number: 4
+		- Launch Time: 06/09/23 10:05:56 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.48 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 03/21/25 01:59:22 PM GMT-04:00
+		- Last Sample Time: 03/21/25 01:59:22 PM GMT-04:00
+Event Type: End Of File
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765869
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:53:09 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: End Of File
+		- Launch Name: BT_PCAR03_2306_b
+		- Deployment Number: 4
+		- Launch Time: 06/09/23 10:05:56 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.48 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 03/21/25 01:59:22 PM GMT-04:00
+		- Last Sample Time: 03/21/25 01:59:22 PM GMT-04:00

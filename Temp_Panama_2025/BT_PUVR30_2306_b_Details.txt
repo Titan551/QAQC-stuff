@@ -1,0 +1,128 @@
+﻿Details
+Series: Temp, *C (Uva Ridley 30m PUVR30)
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765875
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:55:59 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Temperature, *C
+		- Sensor Label: Uva Ridley 30m PUVR30
+		- Launch Name: BT_PUVR30_2306_b
+		- Deployment Number: 3
+		- Launch Time: 06/09/23 11:46:10 AM GMT-04:00
+		- Logging Interval: 00 Hr 30 Min 00 Sec
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.51 Volts
+		- Launching Program: HOBOware -3.7.25_0811_1019_Mac
+	Series Statistics
+		- Samples: 31,014
+		- Max: 35.262
+		- Min: 15.509
+		- Avg: 25.622
+		- Std Dev (σ): 3.030
+		- First Sample Time: 06/13/23 09:15:00 AM GMT-04:00
+		- Last Sample Time: 03/20/25 11:45:00 AM GMT-04:00
+Event Type: Coupler Detached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765875
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:55:59 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Detached
+		- Launch Name: BT_PUVR30_2306_b
+		- Deployment Number: 3
+		- Launch Time: 06/09/23 11:46:10 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.51 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 06/13/23 09:15:00 AM GMT-04:00
+		- Last Sample Time: 06/13/23 09:15:00 AM GMT-04:00
+Event Type: Coupler Attached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765875
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:55:59 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Attached
+		- Launch Name: BT_PUVR30_2306_b
+		- Deployment Number: 3
+		- Launch Time: 06/09/23 11:46:10 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.51 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 03/20/25 12:04:16 PM GMT-04:00
+		- Last Sample Time: 03/20/25 12:04:16 PM GMT-04:00
+Event Type: Host Connected
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765875
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:55:59 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Host Connected
+		- Launch Name: BT_PUVR30_2306_b
+		- Deployment Number: 3
+		- Launch Time: 06/09/23 11:46:10 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.51 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 03/20/25 12:04:16 PM GMT-04:00
+		- Last Sample Time: 03/20/25 12:04:16 PM GMT-04:00
+Event Type: Stopped
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765875
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:55:59 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Stopped
+		- Launch Name: BT_PUVR30_2306_b
+		- Deployment Number: 3
+		- Launch Time: 06/09/23 11:46:10 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.51 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 03/20/25 12:04:26 PM GMT-04:00
+		- Last Sample Time: 03/20/25 12:04:26 PM GMT-04:00
+Event Type: End Of File
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 21765875
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 05/18/23 02:55:59 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: End Of File
+		- Launch Name: BT_PUVR30_2306_b
+		- Deployment Number: 3
+		- Launch Time: 06/09/23 11:46:10 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.51 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 03/20/25 12:04:26 PM GMT-04:00
+		- Last Sample Time: 03/20/25 12:04:26 PM GMT-04:00

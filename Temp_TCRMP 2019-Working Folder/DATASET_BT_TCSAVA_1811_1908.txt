@@ -1,0 +1,98 @@
+DATASET description metadata for TCRMP                        [Version: June 2011] 
+Benthic temperature record from “Savana”, St. Thomas, USVI from November 27, 2018 to August 22, 2019
+
+
+Originating PI name and contact information:  
+Tyler B. Smith
+Center for Marine and Environmental Studies
+University of the Virgin Islands
+2 John Brewers Bay
+Saint Thomas, VI,  00802, USA
+Phone: 1-(340)-693-1394
+Email: tsmith@uvi.edu
+
+
+Ocean data manager contact information:
+Vanessa McKague
+Center for Marine and Environmental Studies
+University of the Virgin Islands
+2 John Brewers Bay
+Saint Thomas, VI,  00802, USA
+Phone: 1-(340)-693-1378
+Email: vwright@uvi.edu
+
+
+
+Dataset Name:  
+
+
+BT_TCSAVA_1811_1908.csv
+
+
+Dataset description:
+
+
+Project:  
+The United States Virgin Islands Territorial Coral Reef Monitoring Program
+
+
+Funding:   Department of Planning and Natural Resources, NOAA Coral Reef Conservation Program
+
+
+Cruise or Deployment, if applicable:  
+
+
+Location:  
+Coordinates: 18.34064, -65.08205; depth: 9 m mean low water
+
+
+Parameter names, definitions and units: 
+Number:  Sequential number of the datum
+Date Time UTC 4:  Date and time in UTC-4
+Temperature: Temperature in degrees Celsius
+ 
+Sampling and Analytical Methodology:  
+Sensor- HOBO U22-001 Water Temp (Onset Computer Corporation, Bourne, MA, USA).  
+Serial numbers-  10587888
+Fringing coral reef near uninhabited Savana Island. Sensor on exposed steel stake of old sediment trap emplacement below transect #1.
+
+
+Data Processing: 
+Data were offloaded with portable base station to laptop.  Data were exported to Microsoft Excel and visually inspected for unusual deviations.  Data taken outside of deployment, during deployment or retrieval, were snipped from the record by visual inspection of the data.  Time stamps were modified as zone UTC-4 and adjusted as necessary.
+
+
+Access restrictions:
+None
+
+
+Related files and references: 
+
+
+Series: Temp, °C
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10629067
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 04/13/16 08:21:48 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Temperature, °C
+		• Launch Name: BT_TCSAVA_1811_
+		• Deployment Number: 3
+		• Launch Time: 11/20/18 12:43:57 PM GMT-04:00
+		• Logging Interval: 00 Hr 15 Min 00 Sec
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.43 Volts
+		• Launching Program: HOBOware Pro-3.7.14_0315_0933_Mac
+	Series Statistics
+		• Samples: 27,574
+		• Max: 33.704
+		• Min: 19.246
+		• Avg: 27.097
+		• Std Dev (σ): 1.252
+		• First Sample Time: 11/21/18 10:00:00 AM GMT-04:00
+		• Last Sample Time: 09/04/19 03:15:00 PM GMT-04:00
+
+Created by: Vanessa McKague, September 16, 2019

@@ -1,0 +1,127 @@
+﻿Details
+Series: Temp, *C
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20925879
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 09/17/20 09:47:59 AM GMT-04:00
+	Deployment Info
+		- Full Series Name: Temperature, *C
+		- Launch Name: BT_TCCORB_2209
+		- Deployment Number: 5
+		- Launch Time: 09/07/22 01:33:45 PM GMT-04:00
+		- Logging Interval: 00 Hr 15 Min 00 Sec
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.46 Volts
+		- Launching Program: HOBOware -3.7.25_0811_1019_Mac
+	Series Statistics
+		- Samples: 41,597
+		- Max: 34.783
+		- Min: 22.154
+		- Avg: 28.350
+		- Std Dev (σ): 1.830
+		- First Sample Time: 09/08/22 08:00:00 AM GMT-04:00
+		- Last Sample Time: 11/15/23 03:00:00 PM GMT-04:00
+Event Type: Coupler Detached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20925879
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 09/17/20 09:47:59 AM GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Detached
+		- Launch Name: BT_TCCORB_2209
+		- Deployment Number: 5
+		- Launch Time: 09/07/22 01:33:45 PM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.46 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 09/08/22 08:00:00 AM GMT-04:00
+		- Last Sample Time: 09/08/22 08:00:00 AM GMT-04:00
+Event Type: Coupler Attached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20925879
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 09/17/20 09:47:59 AM GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Attached
+		- Launch Name: BT_TCCORB_2209
+		- Deployment Number: 5
+		- Launch Time: 09/07/22 01:33:45 PM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.46 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 11/15/23 03:11:31 PM GMT-04:00
+		- Last Sample Time: 11/15/23 03:11:31 PM GMT-04:00
+Event Type: Host Connected
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20925879
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 09/17/20 09:47:59 AM GMT-04:00
+	Deployment Info
+		- Full Series Name: Host Connected
+		- Launch Name: BT_TCCORB_2209
+		- Deployment Number: 5
+		- Launch Time: 09/07/22 01:33:45 PM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.46 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 11/15/23 03:11:31 PM GMT-04:00
+		- Last Sample Time: 11/15/23 03:11:31 PM GMT-04:00
+Event Type: Stopped
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20925879
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 09/17/20 09:47:59 AM GMT-04:00
+	Deployment Info
+		- Full Series Name: Stopped
+		- Launch Name: BT_TCCORB_2209
+		- Deployment Number: 5
+		- Launch Time: 09/07/22 01:33:45 PM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.46 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 11/15/23 03:11:37 PM GMT-04:00
+		- Last Sample Time: 11/15/23 03:11:37 PM GMT-04:00
+Event Type: End Of File
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20925879
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 09/17/20 09:47:59 AM GMT-04:00
+	Deployment Info
+		- Full Series Name: End Of File
+		- Launch Name: BT_TCCORB_2209
+		- Deployment Number: 5
+		- Launch Time: 09/07/22 01:33:45 PM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.46 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 11/15/23 03:11:37 PM GMT-04:00
+		- Last Sample Time: 11/15/23 03:11:37 PM GMT-04:00

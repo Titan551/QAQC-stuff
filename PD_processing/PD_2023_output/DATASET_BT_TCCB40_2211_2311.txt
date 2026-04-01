@@ -1,0 +1,67 @@
+DATASET description metadata for TCRMP [Version: June 2011] Benthic temperature record from “Cane bay Deep”, St. Thomas, USVI from November 18, 2022 to November 12, 2023 
+Originating PI name and contact information:  
+Tyler B. Smith 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1394 
+Email: tsmith@uvi.edu 
+Ocean data manager contact information: 
+Vanessa McKague 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1378 
+Email: vwright@uvi.edu 
+Dataset Name:  
+BT_TCCB40_2211_2311
+Dataset description: 
+Project:  
+The United States Virgin Islands Territorial Coral Reef Monitoring Program 
+Funding:  
+Department of Planning and Natural Resources, NOAA Coral Reef Conservation Program 
+Cruise or Deployment, if applicable:  
+Location:  
+Coordinates: 17.77661, -64.81522; depth: 38 m 
+Parameter names, definitions and units:  
+Number: Sequential number of the datum 
+Date Time UTC 4: Date and time in UTC-4 
+Temperature: Temperature in degrees Celsius
+Sampling and Analytical Methodology:  
+Sensor- HOBO U22-001 Water Temp (Onset Computer Corporation, Bourne, MA, USA).  Serial number- 21445098, 21445102
+Wall reef closest offshelf from Cane Bay shallow site. Sensor at beginning of transect #5 in sand channel. 
+Data Processing:  
+Data were offloaded with portable base station to laptop. Data were exported to Microsoft Excel and  visually inspected for unusual deviations. Data taken outside of deployment, during deployment or  retrieval, were snipped from the record by visual inspection of the data. Time stamps were modified  as zone UTC-4 and adjusted as necessary. Records from probe 1 and probe 2 were combined into a  single CSV file. 
+Access restrictions: 
+None 
+Related files and references:  
+Details
+Series: Temp, *C
+Devices
+Device Info
+- Product: HOBO U22-001 Water Temp
+- Serial Number: 21445098
+- Version Number: 1.06
+- Manufacturer: Onset Computer Corporation
+- Device Memory: 65536
+- Header Created: 06/23/22 02:13:21 PM GMT-04:00
+Deployment Info
+- Full Series Name: Temperature, *C
+- Launch Name: BT_TCCB40_2210_a
+- Deployment Number: 2
+- Launch Time: 10/14/22 12:23:32 PM GMT-04:00
+- Logging Interval: 00 Hr 15 Min 00 Sec
+- Launch GMT Offset: -4 Hr 0 Min
+- Battery at Launch: 3.54 Volts
+- Launching Program: HOBOware -3.7.25_0811_1019_Mac
+Series Statistics
+- Samples: 40,423
+- Max: 41.298
+- Min: 19.674
+- Avg: 27.401
+- Std Dev (?): 2.182
+- First Sample Time: 10/17/22 08:00:00 AM GMT-04:00
+- Last Sample Time: 12/12/23 09:30:00 AM GMT-04:00
+Created by: Cole Sheeley, June 14, 2024

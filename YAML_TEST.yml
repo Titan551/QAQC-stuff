@@ -1,0 +1,11 @@
+# YAML_TEST
+
+# PATHS
+folder_path: "C:/UVI/QAQC stuff/Temp_TCRMP_2025_PBL"
+deployment_log_path: "C:/UVI/QAQC stuff/Temperature_UVI_deployment_log.csv"
+os_path: "C:/UVI/QAQC stuff"
+output_folder: "C:/UVI/QAQC stuff/Temp_TCRMP_2025_PBL_output"
+plots_path: "C:/UVI/QAQC stuff/Temp_TCRMP_2025_PBL_output/graphs"
+PD_folder_path: "C:/UVI/QAQC stuff/Temp_TCRMP_2025_Output/Provisional Duplicates"
+PD_export_path: "C:/UVI/QAQC stuff/PD_processing/Provisional_Duplicates_2025"
+pd_output_folder: "C:/UVI/QAQC stuff/PD_processing/PD_2025_output"

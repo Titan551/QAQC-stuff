@@ -1,0 +1,68 @@
+DATASET description metadata for TCRMP [Version: June 2011] Benthic temperature record from “Black Point”, St. Thomas, USVI from October 17, 2023 to February 15, 2024 
+Originating PI name and contact information:  
+Tyler B. Smith 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1394 
+Email: tsmith@uvi.edu 
+Ocean data manager contact information: 
+Vanessa McKague 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1378 
+Email: vwright@uvi.edu 
+Dataset Name:  
+BT_TCBKPT_2310_2402
+Dataset description: 
+Project:  
+The United States Virgin Islands Territorial Coral Reef Monitoring Program 
+Funding:  
+Department of Planning and Natural Resources, NOAA Coral Reef Conservation Program 
+Cruise or Deployment, if applicable:  
+Location:  
+Coordinates: 18.34450, -64.98595; depth: 9 m 
+Parameter names, definitions and units:  
+Number: Sequential number of the datum 
+Date Time UTC 4: Date and time in UTC-4 
+Temperature: Temperature in degrees Celsius
+Sampling and Analytical Methodology:  
+Sensor- HOBO U22-001 Water Temp (Onset Computer Corporation, Bourne, MA, USA).  Serial number- 21828454, 21828447
+High cover mixed orbicellid fringing reef near UVI. Sensor at beginning of transect #1, exposed. 
+Data Processing:  
+Data were offloaded with portable base station to laptop. Data were exported to Microsoft Excel and  visually inspected for unusual deviations. Data taken outside of deployment, during deployment or  retrieval, were snipped from the record by visual inspection of the data. Time stamps were modified  as zone UTC-4 and adjusted as necessary. Records from probe 1 and probe 2 were combined into a  single CSV file. 
+Access restrictions: 
+None 
+Related files and references:  
+Details
+Series: Temp, *C (Black Point )
+Devices
+Device Info
+- Product: HOBO U22-001 Water Temp
+- Serial Number: 21828454
+- Version Number: 1.06
+- Manufacturer: Onset Computer Corporation
+- Device Memory: 65536
+- Header Created: 08/21/23 01:59:53 PM GMT-04:00
+Deployment Info
+- Full Series Name: Temperature, *C
+- Sensor Label: Black Point
+- Launch Name: BT_TCBKPT_2310_
+- Deployment Number: 3
+- Launch Time: 10/10/23 12:31:13 PM GMT-04:00
+- Logging Interval: 00 Hr 15 Min 00 Sec
+- Launch GMT Offset: -4 Hr 0 Min
+- Battery at Launch: 3.51 Volts
+- Launching Program: HOBOware -3.7.26_0505_1156_Mac
+Series Statistics
+- Samples: 13,461
+- Max: 35.770
+- Min: 20.246
+- Avg: 27.479
+- Std Dev (?): 2.182
+- First Sample Time: 10/12/23 08:00:00 AM GMT-04:00
+- Last Sample Time: 02/29/24 01:00:00 PM GMT-04:00
+Created by: Cole Sheeley, June 14, 2024

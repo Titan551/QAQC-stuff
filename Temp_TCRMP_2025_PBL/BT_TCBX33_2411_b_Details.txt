@@ -1,0 +1,128 @@
+﻿Details
+Series: Temp, *C (Buck Island STX Duplicate)
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20962628
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 10/27/20 03:32:49 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Temperature, *C
+		- Sensor Label: Buck Island STX Duplicate
+		- Launch Name: BT_TCBKIX_2411_b
+		- Deployment Number: 7
+		- Launch Time: 11/06/24 11:21:09 AM GMT-04:00
+		- Logging Interval: 00 Hr 15 Min 00 Sec
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.40 Volts
+		- Launching Program: HOBOware -3.7.28_0415_1447_Mac
+	Series Statistics
+		- Samples: 17,009
+		- Max: 29.966
+		- Min: 18.794
+		- Avg: 26.905
+		- Std Dev (σ): 2.340
+		- First Sample Time: 11/11/24 07:00:00 AM GMT-04:00
+		- Last Sample Time: 05/07/25 11:00:00 AM GMT-04:00
+Event Type: Coupler Detached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20962628
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 10/27/20 03:32:49 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Detached
+		- Launch Name: BT_TCBKIX_2411_b
+		- Deployment Number: 7
+		- Launch Time: 11/06/24 11:21:09 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.40 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 11/11/24 07:00:00 AM GMT-04:00
+		- Last Sample Time: 11/11/24 07:00:00 AM GMT-04:00
+Event Type: Coupler Attached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20962628
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 10/27/20 03:32:49 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Attached
+		- Launch Name: BT_TCBKIX_2411_b
+		- Deployment Number: 7
+		- Launch Time: 11/06/24 11:21:09 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.40 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 05/07/25 11:09:58 AM GMT-04:00
+		- Last Sample Time: 05/07/25 11:09:58 AM GMT-04:00
+Event Type: Host Connected
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20962628
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 10/27/20 03:32:49 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Host Connected
+		- Launch Name: BT_TCBKIX_2411_b
+		- Deployment Number: 7
+		- Launch Time: 11/06/24 11:21:09 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.40 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 05/07/25 11:09:58 AM GMT-04:00
+		- Last Sample Time: 05/07/25 11:09:58 AM GMT-04:00
+Event Type: Stopped
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20962628
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 10/27/20 03:32:49 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: Stopped
+		- Launch Name: BT_TCBKIX_2411_b
+		- Deployment Number: 7
+		- Launch Time: 11/06/24 11:21:09 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.40 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 05/07/25 11:10:04 AM GMT-04:00
+		- Last Sample Time: 05/07/25 11:10:04 AM GMT-04:00
+Event Type: End Of File
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20962628
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 10/27/20 03:32:49 PM GMT-04:00
+	Deployment Info
+		- Full Series Name: End Of File
+		- Launch Name: BT_TCBKIX_2411_b
+		- Deployment Number: 7
+		- Launch Time: 11/06/24 11:21:09 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.40 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 05/07/25 11:10:04 AM GMT-04:00
+		- Last Sample Time: 05/07/25 11:10:04 AM GMT-04:00

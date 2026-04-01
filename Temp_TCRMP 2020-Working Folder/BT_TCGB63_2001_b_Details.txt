@@ -1,0 +1,67 @@
+﻿Details
+Series: Temp, °C
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 20733077
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 10/29/19 09:05:41 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Temperature, °C
+		• Launch Name: BT_TCGB63_2001_b
+		• Deployment Number: 3
+		• Launch Time: 01/28/20 09:15:49 AM GMT-04:00
+		• Logging Interval: 00 Hr 15 Min 00 Sec
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.54 Volts
+		• Launching Program: HOBOware -3.7.17_0628_0951_Windows
+	Series Statistics
+		• Samples: 43,445
+		• Max: 35.155
+		• Min: 19.032
+		• Avg: 26.988
+		• Std Dev (σ): 0.983
+		• First Sample Time: 01/28/20 11:00:00 AM GMT-04:00
+		• Last Sample Time: 04/25/21 12:00:00 AM GMT-04:00
+Event Type: Coupler Detached
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 20733077
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 10/29/19 09:05:41 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Coupler Detached
+		• Launch Name: BT_TCGB63_2001_b
+		• Deployment Number: 3
+		• Launch Time: 01/28/20 09:15:49 AM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.54 Volts
+	Series Statistics
+		• Samples: 1
+		• First Sample Time: 01/28/20 11:00:00 AM GMT-04:00
+		• Last Sample Time: 01/28/20 11:00:00 AM GMT-04:00
+Event Type: End Of File
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 20733077
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 10/29/19 09:05:41 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: End Of File
+		• Launch Name: BT_TCGB63_2001_b
+		• Deployment Number: 3
+		• Launch Time: 01/28/20 09:15:49 AM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.54 Volts
+	Series Statistics
+		• Samples: 1
+		• First Sample Time: 04/25/21 12:00:00 AM GMT-04:00
+		• Last Sample Time: 04/25/21 12:00:00 AM GMT-04:00

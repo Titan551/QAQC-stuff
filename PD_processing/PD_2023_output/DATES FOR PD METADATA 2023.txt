@@ -1,0 +1,8 @@
+DATES FOR PD METADATA 2023
+BT_TCBKPT_23 10 17_24 02 15_calculations.csv
+BT_TCCB40_22 11 18_23 11 12_calculations.csv
+BT_TCGB63_22 12 02_23 10 26_calculations.csv
+BT_TCGMKT_22 12 07_23 12 05_calculations.csv
+BT_TCMT40_22 10 22_23 11 10_calculations.csv
+BT_TCSHCS_22 10 04_23 10 30_calculations.csv
+BT_TCSR99_19 10 19_21 01 13_calculations.csv

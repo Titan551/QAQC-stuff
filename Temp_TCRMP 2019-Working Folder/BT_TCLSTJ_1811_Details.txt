@@ -1,0 +1,87 @@
+﻿Details
+Series: Temp, °C
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10455140
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 11/25/13 09:57:36 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Temperature, °C
+		• Launch Name: BT_TCLSTJ_1811_
+		• Deployment Number: 8
+		• Launch Time: 11/20/18 01:09:42 PM GMT-04:00
+		• Logging Interval: 00 Hr 15 Min 00 Sec
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.37 Volts
+		• Launching Program: HOBOware Pro-3.7.14_0315_0933_Mac
+	Series Statistics
+		• Samples: 40,918
+		• Max: 49.107
+		• Min: 18.533
+		• Avg: 27.343
+		• Std Dev (σ): 2.158
+		• First Sample Time: 11/27/18 10:00:00 AM GMT-04:00
+		• Last Sample Time: 01/27/20 03:15:00 PM GMT-04:00
+Event Type: Coupler Detached
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10455140
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 11/25/13 09:57:36 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Coupler Detached
+		• Launch Name: BT_TCLSTJ_1811_
+		• Deployment Number: 8
+		• Launch Time: 11/20/18 01:09:42 PM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.37 Volts
+	Series Statistics
+		• Samples: 4
+		• First Sample Time: 11/27/18 10:00:00 AM GMT-04:00
+		• Last Sample Time: 12/13/19 10:21:00 AM GMT-04:00
+Event Type: Coupler Attached
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10455140
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 11/25/13 09:57:36 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Coupler Attached
+		• Launch Name: BT_TCLSTJ_1811_
+		• Deployment Number: 8
+		• Launch Time: 11/20/18 01:09:42 PM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.37 Volts
+	Series Statistics
+		• Samples: 4
+		• First Sample Time: 12/13/19 10:20:01 AM GMT-04:00
+		• Last Sample Time: 01/27/20 03:21:25 PM GMT-04:00
+Event Type: End Of File
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10455140
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 11/25/13 09:57:36 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: End Of File
+		• Launch Name: BT_TCLSTJ_1811_
+		• Deployment Number: 8
+		• Launch Time: 11/20/18 01:09:42 PM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.37 Volts
+	Series Statistics
+		• Samples: 1
+		• First Sample Time: 01/27/20 03:21:25 PM GMT-04:00
+		• Last Sample Time: 01/27/20 03:21:25 PM GMT-04:00

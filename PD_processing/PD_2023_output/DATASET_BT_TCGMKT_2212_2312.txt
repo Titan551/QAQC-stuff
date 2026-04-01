@@ -1,0 +1,67 @@
+DATASET description metadata for TCRMP [Version: June 2011] Benthic temperature record from “Grammanik Tiger FSA”, St. Thomas, USVI from December 7, 2022 to December 5, 2023 
+Originating PI name and contact information:  
+Tyler B. Smith 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1394 
+Email: tsmith@uvi.edu 
+Ocean data manager contact information: 
+Vanessa McKague 
+Center for Marine and Environmental Studies 
+University of the Virgin Islands 
+2 John Brewers Bay 
+Saint Thomas, VI, 00802, USA 
+Phone: 1-(340)-693-1378 
+Email: vwright@uvi.edu 
+Dataset Name:  
+BT_TCGMKT_2212_2312
+Dataset description: 
+Project:  
+The United States Virgin Islands Territorial Coral Reef Monitoring Program 
+Funding:  
+Department of Planning and Natural Resources, NOAA Coral Reef Conservation Program 
+Cruise or Deployment, if applicable:  
+Location:  
+Coordinates: 18.18885, -64.95659; depth: 38 m 
+Parameter names, definitions and units:  
+Number: Sequential number of the datum 
+Date Time UTC 4: Date and time in UTC-4 
+Temperature: Temperature in degrees Celsius
+Sampling and Analytical Methodology:  
+Sensor- HOBO U22-001 Water Temp (Onset Computer Corporation, Bourne, MA, USA).  Serial number- 20962640, 20962626
+Mesophotic coral reef at multi-species fish spawning aggregation in the Grammanik Bank fisheries seasonal closed area. Sensor at beginning of transect #1 under coral head. 
+Data Processing:  
+Data were offloaded with portable base station to laptop. Data were exported to Microsoft Excel and  visually inspected for unusual deviations. Data taken outside of deployment, during deployment or  retrieval, were snipped from the record by visual inspection of the data. Time stamps were modified  as zone UTC-4 and adjusted as necessary. Records from probe 1 and probe 2 were combined into a  single CSV file. 
+Access restrictions: 
+None 
+Related files and references:  
+Details
+Series: Temp, *C
+Devices
+Device Info
+- Product: HOBO U22-001 Water Temp
+- Serial Number: 20962640
+- Version Number: 1.06
+- Manufacturer: Onset Computer Corporation
+- Device Memory: 65536
+- Header Created: 11/04/20 01:26:03 PM GMT-04:00
+Deployment Info
+- Full Series Name: Temperature, *C
+- Launch Name: BT_TCGMKT_2211_a
+- Deployment Number: 4
+- Launch Time: 11/22/22 01:54:30 PM GMT-04:00
+- Logging Interval: 00 Hr 15 Min 00 Sec
+- Launch GMT Offset: -4 Hr 0 Min
+- Battery at Launch: 3.43 Volts
+- Launching Program: HOBOware Pro Trial-3.7.25_0811_1019_Windows
+Series Statistics
+- Samples: 36,390
+- Max: 31.408
+- Min: 21.915
+- Avg: 27.527
+- Std Dev (?): 1.336
+- First Sample Time: 11/28/22 08:00:00 AM GMT-04:00
+- Last Sample Time: 12/12/23 09:15:00 AM GMT-04:00
+Created by: Cole Sheeley, June 14, 2024

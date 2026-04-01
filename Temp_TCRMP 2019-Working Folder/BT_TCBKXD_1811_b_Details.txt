@@ -1,0 +1,127 @@
+﻿Details
+Series: Temp, *C
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 10508028
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 08/13/14, 09:54:18  GMT-04:00
+	Deployment Info
+		- Full Series Name: Temperature, *C
+		- Launch Name: BT_TCBKXD_1811_b
+		- Deployment Number: 9
+		- Launch Time: 10/29/18, 16:24:32  GMT-04:00
+		- Logging Interval: 00 Hr 30 Min 00 Sec
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.43 Volts
+		- Launching Program: HOBOware -3.7.14_0315_0933_Windows
+	Series Statistics
+		- Samples: 19,265
+		- Max: 35.049
+		- Min: 6.990
+		- Avg: 27.123
+		- Std Dev (σ): 1.738
+		- First Sample Time: 11/01/18, 05:15:00  GMT-04:00
+		- Last Sample Time: 12/07/19, 13:15:00  GMT-04:00
+Event Type: Coupler Detached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 10508028
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 08/13/14, 09:54:18  GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Detached
+		- Launch Name: BT_TCBKXD_1811_b
+		- Deployment Number: 9
+		- Launch Time: 10/29/18, 16:24:32  GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.43 Volts
+	Series Statistics
+		- Samples: 8
+		- First Sample Time: 11/01/18, 05:15:00  GMT-04:00
+		- Last Sample Time: 11/08/19, 15:55:34  GMT-04:00
+Event Type: Coupler Attached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 10508028
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 08/13/14, 09:54:18  GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Attached
+		- Launch Name: BT_TCBKXD_1811_b
+		- Deployment Number: 9
+		- Launch Time: 10/29/18, 16:24:32  GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.43 Volts
+	Series Statistics
+		- Samples: 8
+		- First Sample Time: 11/08/19, 15:36:13  GMT-04:00
+		- Last Sample Time: 12/07/19, 13:21:30  GMT-04:00
+Event Type: Host Connected
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 10508028
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 08/13/14, 09:54:18  GMT-04:00
+	Deployment Info
+		- Full Series Name: Host Connected
+		- Launch Name: BT_TCBKXD_1811_b
+		- Deployment Number: 9
+		- Launch Time: 10/29/18, 16:24:32  GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.43 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 12/07/19, 13:21:30  GMT-04:00
+		- Last Sample Time: 12/07/19, 13:21:30  GMT-04:00
+Event Type: Stopped
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 10508028
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 08/13/14, 09:54:18  GMT-04:00
+	Deployment Info
+		- Full Series Name: Stopped
+		- Launch Name: BT_TCBKXD_1811_b
+		- Deployment Number: 9
+		- Launch Time: 10/29/18, 16:24:32  GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.43 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 12/07/19, 13:21:35  GMT-04:00
+		- Last Sample Time: 12/07/19, 13:21:35  GMT-04:00
+Event Type: End Of File
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 10508028
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 08/13/14, 09:54:18  GMT-04:00
+	Deployment Info
+		- Full Series Name: End Of File
+		- Launch Name: BT_TCBKXD_1811_b
+		- Deployment Number: 9
+		- Launch Time: 10/29/18, 16:24:32  GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.43 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 12/07/19, 13:21:35  GMT-04:00
+		- Last Sample Time: 12/07/19, 13:21:35  GMT-04:00

@@ -1,0 +1,67 @@
+﻿Details
+Series: Temp, *C
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20925885
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 09/17/20 09:54:31 AM GMT-04:00
+	Deployment Info
+		- Full Series Name: Temperature, *C
+		- Launch Name: PanIglesias-10m-2306
+		- Deployment Number: 8
+		- Launch Time: 06/19/23 07:47:50 AM GMT-04:00
+		- Logging Interval: 00 Hr 15 Min 00 Sec
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.40 Volts
+		- Launching Program: HOBOware Pro-3.7.14_0315_0933_Mac
+	Series Statistics
+		- Samples: 43,434
+		- Max: 41.356
+		- Min: 20.674
+		- Avg: 29.029
+		- Std Dev (σ): 1.001
+		- First Sample Time: 06/19/23 08:00:00 AM GMT-04:00
+		- Last Sample Time: 09/13/24 06:15:00 PM GMT-04:00
+Event Type: Coupler Detached
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20925885
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 09/17/20 09:54:31 AM GMT-04:00
+	Deployment Info
+		- Full Series Name: Coupler Detached
+		- Launch Name: PanIglesias-10m-2306
+		- Deployment Number: 8
+		- Launch Time: 06/19/23 07:47:50 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.40 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 06/19/23 08:00:00 AM GMT-04:00
+		- Last Sample Time: 06/19/23 08:00:00 AM GMT-04:00
+Event Type: End Of File
+	Devices
+		Device Info
+			- Product: HOBO U22-001 Water Temp
+			- Serial Number: 20925885
+			- Version Number: 1.06
+			- Manufacturer: Onset Computer Corporation
+			- Device Memory: 65536
+			- Header Created: 09/17/20 09:54:31 AM GMT-04:00
+	Deployment Info
+		- Full Series Name: End Of File
+		- Launch Name: PanIglesias-10m-2306
+		- Deployment Number: 8
+		- Launch Time: 06/19/23 07:47:50 AM GMT-04:00
+		- Launch GMT Offset: -4 Hr 0 Min
+		- Battery at Launch: 3.40 Volts
+	Series Statistics
+		- Samples: 1
+		- First Sample Time: 09/13/24 06:15:00 PM GMT-04:00
+		- Last Sample Time: 09/13/24 06:15:00 PM GMT-04:00

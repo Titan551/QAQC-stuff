@@ -1,0 +1,128 @@
+﻿Details
+Series: Temp, °C (100')
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10558245
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 08/13/14 10:07:26 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Temperature, °C
+		• Sensor Label: 100'
+		• Launch Name: BT_TCSR60_1811_b
+		• Deployment Number: 7
+		• Launch Time: 10/29/18 03:58:58 PM GMT-04:00
+		• Logging Interval: 00 Hr 30 Min 00 Sec
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.48 Volts
+		• Launching Program: HOBOware -3.7.14_0315_0933_Windows
+	Series Statistics
+		• Samples: 17,859
+		• Max: 41.385
+		• Min: 17.915
+		• Avg: 26.787
+		• Std Dev (σ): 1.180
+		• First Sample Time: 11/01/18 09:15:00 AM GMT-04:00
+		• Last Sample Time: 11/08/19 10:15:00 AM GMT-04:00
+Event Type: Coupler Detached
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10558245
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 08/13/14 10:07:26 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Coupler Detached
+		• Launch Name: BT_TCSR60_1811_b
+		• Deployment Number: 7
+		• Launch Time: 10/29/18 03:58:58 PM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.48 Volts
+	Series Statistics
+		• Samples: 1
+		• First Sample Time: 11/01/18 09:15:00 AM GMT-04:00
+		• Last Sample Time: 11/01/18 09:15:00 AM GMT-04:00
+Event Type: Coupler Attached
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10558245
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 08/13/14 10:07:26 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Coupler Attached
+		• Launch Name: BT_TCSR60_1811_b
+		• Deployment Number: 7
+		• Launch Time: 10/29/18 03:58:58 PM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.48 Volts
+	Series Statistics
+		• Samples: 1
+		• First Sample Time: 11/08/19 10:16:49 AM GMT-04:00
+		• Last Sample Time: 11/08/19 10:16:49 AM GMT-04:00
+Event Type: Host Connected
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10558245
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 08/13/14 10:07:26 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Host Connected
+		• Launch Name: BT_TCSR60_1811_b
+		• Deployment Number: 7
+		• Launch Time: 10/29/18 03:58:58 PM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.48 Volts
+	Series Statistics
+		• Samples: 1
+		• First Sample Time: 11/08/19 10:16:49 AM GMT-04:00
+		• Last Sample Time: 11/08/19 10:16:49 AM GMT-04:00
+Event Type: Stopped
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10558245
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 08/13/14 10:07:26 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: Stopped
+		• Launch Name: BT_TCSR60_1811_b
+		• Deployment Number: 7
+		• Launch Time: 10/29/18 03:58:58 PM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.48 Volts
+	Series Statistics
+		• Samples: 1
+		• First Sample Time: 11/08/19 10:16:59 AM GMT-04:00
+		• Last Sample Time: 11/08/19 10:16:59 AM GMT-04:00
+Event Type: End Of File
+	Devices
+		Device Info
+			• Product: HOBO U22-001 Water Temp
+			• Serial Number: 10558245
+			• Version Number: 1.06
+			• Manufacturer: Onset Computer Corporation
+			• Device Memory: 65536
+			• Header Created: 08/13/14 10:07:26 AM GMT-04:00
+	Deployment Info
+		• Full Series Name: End Of File
+		• Launch Name: BT_TCSR60_1811_b
+		• Deployment Number: 7
+		• Launch Time: 10/29/18 03:58:58 PM GMT-04:00
+		• Launch GMT Offset: -4 Hr 0 Min
+		• Battery at Launch: 3.48 Volts
+	Series Statistics
+		• Samples: 1
+		• First Sample Time: 11/08/19 10:16:59 AM GMT-04:00
+		• Last Sample Time: 11/08/19 10:16:59 AM GMT-04:00

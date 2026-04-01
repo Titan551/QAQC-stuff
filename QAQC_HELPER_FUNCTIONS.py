@@ -11,6 +11,37 @@ import copy
 import matplotlib.dates as mdates
 import numpy as np
 
+# Load site metadata CSV for location name mapping
+_metadata_df = None
+
+def _load_metadata_df():
+    """Lazy load the metadata dataframe."""
+    global _metadata_df
+    if _metadata_df is None:
+        metadata_csv_path = resolve_path(CONFIG['SITE_METADATA_CSV'])
+        _metadata_df = pd.read_csv(metadata_csv_path, dtype=str)
+        _metadata_df.set_index("6LetterCode", inplace=True)
+    return _metadata_df
+
+def get_location_from_code(site_code):
+    """
+    Return location name for a given 6-letter site code from metadata CSV.
+    Converts location name to folder-safe format (underscores instead of spaces).
+    
+    Parameters:
+        site_code (str): 6-letter site code (e.g., 'TCBKPT')
+    
+    Returns:
+        str: Folder-safe location name (e.g., 'Black_Point') or site code if not found
+    """
+    metadata_df = _load_metadata_df()
+    try:
+        location = metadata_df.loc[site_code, "Location"]
+        return location.replace(" ", "_")  # safe folder name
+    except KeyError:
+        print(f"Warning: Site code {site_code} not found in metadata CSV.")
+        return site_code  # fallback to site code
+
 #
 def get_csv_files(folder_path, file_pattern='*.csv'):
     """
@@ -78,7 +109,7 @@ def ensure_utf8_encoding(folder_path):
                 try:
                     with open(file_path, 'r', encoding='utf-8') as f:
                         f.read()
-                    print(f"✅ Already UTF-8: {file_path}")
+                    print(f"[OK] Already UTF-8: {file_path}")
 
                 except UnicodeDecodeError:
                     try:
@@ -86,7 +117,7 @@ def ensure_utf8_encoding(folder_path):
                         df.to_csv(file_path, index=False, encoding='utf-8')
                         print(f"🔁 Converted to UTF-8: {file_path}")
                     except Exception as e:
-                        print(f"❌ Error processing {file_path}: {e}")
+                        print(f"[ERROR] Error processing {file_path}: {e}")
 
 
 def load_structured_dataframes(csv_files, site_codes, panama_codes):
@@ -109,7 +140,7 @@ def load_structured_dataframes(csv_files, site_codes, panama_codes):
         parts = file_name.split('_')
 
         if len(parts) < 3:
-            print(f"⚠️ Skipping improperly named file: {file_name}")
+            print(f"[WARN] Skipping improperly named file: {file_name}")
             continue
 
         site_code = parts[1]
@@ -117,7 +148,7 @@ def load_structured_dataframes(csv_files, site_codes, panama_codes):
         file_identifier = parts[-1] if len(parts) > 3 and parts[-1] != '' else "a"
         base_file_name = os.path.splitext(os.path.basename(csv_file))[0]
 
-        print(f"📥 Reading CSV for site: {site_code}, file: {csv_file}")
+        print(f"[LOAD] Reading CSV for site: {site_code}, file: {csv_file}")
         df = pd.read_csv(csv_file)
 
         if site_code not in df_files:
@@ -127,7 +158,7 @@ def load_structured_dataframes(csv_files, site_codes, panama_codes):
             df_files[site_code][file_number] = {}
 
         if file_identifier in df_files[site_code][file_number]:
-            print(f"⚠️ Duplicate identifier '{file_identifier}' for site {site_code}, file number {file_number}")
+            print(f"[WARN] Duplicate identifier '{file_identifier}' for site {site_code}, file number {file_number}")
         else:
             df_files[site_code][file_number][file_identifier] = {
                 'DataFrame': df,
@@ -135,7 +166,7 @@ def load_structured_dataframes(csv_files, site_codes, panama_codes):
             }
 
         if site_code not in site_codes and site_code not in panama_codes:
-            raise ValueError(f"❌ Invalid site code '{site_code}' in {csv_file}.")
+            raise ValueError(f"[ERROR] Invalid site code '{site_code}' in {csv_file}.")
 
     return df_files
 
@@ -168,7 +199,7 @@ def clean_plot_title_headers(df_files):
 
                     file_info['DataFrame'] = df
 
-                    print(f"  ✅ Cleaned and reheadered: {file_name}")
+                    print(f"  [OK] Cleaned and reheadered: {file_name}")
                     print(f"  📊 New Columns: {df.columns.tolist()}")
                     print("-" * 50)
                 else:
@@ -193,7 +224,7 @@ def convert_panama_times(df_files, panama_codes):
                         df.rename(columns={datetime_col: "Date Time, GMT-05:00"}, inplace=True)
                         print(f"⏱️ Converted time for: {file_data['File Name']}")
                     else:
-                        print(f"⚠️ '{datetime_col}' not found in {file_data['File Name']}")
+                        print(f"[WARN] '{datetime_col}' not found in {file_data['File Name']}")
 
 
 def normalize_sio_file_names(df_files, folder_path, csv_file_names=None):
@@ -231,9 +262,9 @@ def normalize_sio_file_names(df_files, folder_path, csv_file_names=None):
 
                 if os.path.exists(old_path):
                     os.rename(old_path, new_path)
-                    print(f"📁 Renamed File: {old_path} → {new_path}")
+                    print(f"[FILE] Renamed File: {old_path} → {new_path}")
                 else:
-                    print(f"⚠️ File not found, skipping: {old_path}")
+                    print(f"[WARN] File not found, skipping: {old_path}")
 
         df_files[site_code] = updated_files
 
@@ -246,10 +277,10 @@ def report_missing_a_identifiers(df_files):
     for site_code, site_data in df_files.items():
         for file_number, file_data in site_data.items():
             if 'a' not in file_data:
-                print(f"⚠️  Missing 'a' identifier for site: {site_code}, file number: {file_number}")
+                print(f"[WARN]  Missing 'a' identifier for site: {site_code}, file number: {file_number}")
             else:
                 file_name = file_data['a']['File Name']
-                print(f"✅ Found 'a' identifier for {site_code}, file number {file_number}: {file_name}")
+                print(f"[OK] Found 'a' identifier for {site_code}, file number {file_number}: {file_name}")
 
 
 def reassign_offset_identifiers(df_files, panama_codes):
@@ -260,7 +291,7 @@ def reassign_offset_identifiers(df_files, panama_codes):
     for site_code, site_data in df_files.items():
         for file_number, file_data in site_data.items():
             if 'a' not in file_data or 'b' not in file_data:
-                print(f"⏭️ Skipping {site_code}, file {file_number}: only one file present.")
+                print(f"[SKIP] Skipping {site_code}, file {file_number}: only one file present.")
                 continue
 
             df_a = file_data['a']['DataFrame']
@@ -283,7 +314,7 @@ def reassign_offset_identifiers(df_files, panama_codes):
 
                 time_diff = abs(dt_a - dt_b)
             except Exception as e:
-                print(f"❌ Error processing {site_code}, file {file_number}: {e}")
+                print(f"[ERROR] Error processing {site_code}, file {file_number}: {e}")
                 continue
 
             if time_diff > timedelta(minutes=10):
@@ -291,7 +322,7 @@ def reassign_offset_identifiers(df_files, panama_codes):
                 file_data['d'] = file_data.pop('b')
                 print(f"🔁 Renamed identifiers at {site_code}, file {file_number}: 'a' → 'c', 'b' → 'd' (offset: {time_diff})")
             else:
-                print(f"🟢 Time offset OK for {site_code}, file {file_number}: {time_diff}")
+                print(f"[OK] Time offset OK for {site_code}, file {file_number}: {time_diff}")
 
 
 def filter_deployment_log(deployment_df, csv_files):
@@ -304,7 +335,7 @@ def filter_deployment_log(deployment_df, csv_files):
     """
     csv_file_names = [os.path.splitext(os.path.basename(file))[0] for file in csv_files]
     filtered_df = deployment_df[deployment_df['Offloaded Filename'].isin(csv_file_names)]
-    print("✅ Filtered deployment log:")
+    print("[OK] Filtered deployment log:")
     print(filtered_df)
     return filtered_df, csv_file_names
 
@@ -320,9 +351,9 @@ def check_unmatched_filenames(deployment_df, csv_file_names):
         print("‼️ WARNING: The following files were not found in the deployment log:")
         for f in unmatched_files:
             print(f"  - {f}")
-        print("📝 Suggestion: Fix filename in Google Sheet and re-download.")
+        print("[NOTE] Suggestion: Fix filename in Google Sheet and re-download.")
     else:
-        print("✅ All file names matched with deployment log.")
+        print("[OK] All file names matched with deployment log.")
 
 
 def validate_time_columns(filtered_df):
@@ -341,7 +372,7 @@ def validate_time_columns(filtered_df):
         print("‼️ WARNING: '?' found in time columns for:")
         print(rows_with_q['Offloaded Filename'].tolist())
     else:
-        print("✅ No '?' found in time columns.")
+        print("[OK] No '?' found in time columns.")
 
     return filtered_df
 
@@ -502,11 +533,30 @@ def export_trimmed_csvs(df_files, export_path):
             for file_identifier, file_info in file_data.items():
                 df = file_info['DataFrame']
                 filename = file_info.get('File Name', f"{site_code}_{file_number}_{file_identifier}.csv")
+                if not filename.lower().endswith('.csv'):
+                    filename += '.csv'
                 
                 export_filepath = os.path.join(export_path, filename)
                 
                 # Save trimmed dataframe to CSV
                 df.to_csv(export_filepath, index=False)
+                print(f"Saving trimmed CSV: {export_filepath}")
+
+def import_trimmed(trimmed_csv, file_pattern='*.csv'):
+    """
+    Get a list of CSV file paths in the given folder.
+
+    Parameters:
+        folder_path (str): Path to the folder containing CSV files.
+        file_pattern (str): File matching pattern (default is '*.csv').
+
+    Returns:
+        list: List of CSV file paths.
+    """
+    csv_files = glob.glob(f"{trimmed_csv}/{file_pattern}")
+    print(f"Found {len(csv_files)} CSV files.")
+    return csv_files
+
 
 
 def compute_temperature_difference(df_files):
@@ -572,7 +622,8 @@ def add_comparison_columns(calc_df_files):
                 df_a["Temp A"] = df_a["Temp, °C"]
                 df_a["Temp B"] = df_b["Temp, °C"]
                 df_a["Average_temp"] = (df_a["Temp A"] + df_a["Temp B"]) / 2
-                df_a["Flag"] = df_a["Temperature_Difference"].apply(lambda x: "FLAG" if x > 0.2 else "")
+                df_a["Flag"] = df_a["Temperature_Difference"].apply(lambda x: "SUPER FLAG" if x > 0.4 else ("FLAG" if x > 0.2 else ""))
+
 
 
 def report_flags(calc_df_files):
@@ -591,26 +642,32 @@ def report_flags(calc_df_files):
                     print(f"  >0.4 values: {over_0_4}")
 
 
-def save_flagged_files(calc_df_files, PD_folder):
+def save_flagged_files(calc_df_files, review_folder):
     """
     Saves filtered and flagged 'a' files as CSVs to the specified output folder.
     """
-    if not os.path.exists(PD_folder):
-        os.makedirs(PD_folder)
+    if not os.path.exists(review_folder):
+        os.makedirs(review_folder)
 
     for site_code, file_numbers in calc_df_files.items():
         for file_number, identifiers in file_numbers.items():
             if 'a' in identifiers:
                 df = identifiers['a']['DataFrame']
+                
+                # Convert date column to datetime just once for this dataframe
+                df['Date Time, GMT-04:00'] = pd.to_datetime(df['Date Time, GMT-04:00'], errors='coerce')
+
                 first = df['Date Time, GMT-04:00'].iloc[0]
                 last = df['Date Time, GMT-04:00'].iloc[-1]
                 base_name = f"BT_{site_code}_{first.strftime('%y%m')}_{last.strftime('%y%m')}"
-                out_file = os.path.join(PD_folder, f"PD_{base_name}.csv")
+
+                out_file = os.path.join(review_folder, f"PD_{base_name}.csv")
 
                 df = df[['#', 'Date Time, GMT-04:00', 'Temp A', 'Temp B', 'Temperature_Difference', 'Average_temp', 'Flag']]
                 df.rename(columns={'Date Time, GMT-04:00': 'Date Time, UTC-04:00'}, inplace=True)
                 df.to_csv(out_file, index=False)
                 print(f"Saved: {out_file}")
+
 
 
 def average_temperature_if_close(df_files, threshold=0.2):
@@ -671,6 +728,20 @@ def drop_extra_columns(df_files, panama_codes):
                     else:
                         print(f"Missing expected columns in {site_code} {file_number} {file_letter}")
 
+def import_ready(ready_folder, file_pattern='*.csv'):
+    """
+    Get a list of CSV file paths in the given folder.
+
+    Parameters:
+        folder_path (str): Path to the folder containing CSV files.
+        file_pattern (str): File matching pattern (default is '*.csv').
+
+    Returns:
+        list: List of CSV file paths.
+    """
+    csv_files = glob.glob(f"{ready_folder}/{file_pattern}")
+    print(f"Found {len(csv_files)} CSV files.")
+    return csv_files
 
 def plot_temperature_time_series(df_files, panama_codes):
     """
@@ -682,7 +753,7 @@ def plot_temperature_time_series(df_files, panama_codes):
     - panama_codes: list or set of site_codes for Panama (to determine date column)
     """
     for site_code, site_data in df_files.items():
-        date_col = 'Date Time, GMT-05:00' if site_code in panama_codes else 'Date Time, GMT-04:00'
+        date_col = 'Date Time, UTC-05:00' if site_code in panama_codes else 'Date Time, UTC-04:00'
 
         for file_number, file_data in site_data.items():
             for file_identifier, file_info in file_data.items():
@@ -693,14 +764,14 @@ def plot_temperature_time_series(df_files, panama_codes):
 
                 # Plot temperature over time
                 plt.figure(figsize=(12, 6))
-                plt.plot(df[date_col], df['Temp, °C'], color='blue', marker='o', linestyle='-')
+                plt.plot(df[date_col], df['Temperature'], color='blue', marker='o', linestyle='-')
                 plt.title(f'Temperature Over Time - Site: {site_code}, File: {file_number}, ID: {file_identifier}')
                 plt.xlabel('Date Time')
                 plt.ylabel('Temp, °C')
                 plt.grid(True)
                 plt.xticks(rotation=45)
                 plt.tight_layout()
-                plt.show()
+                #plt.show()
 
 
 def merge_offset_files(df_files, panama_codes):
@@ -764,6 +835,27 @@ def merge_offset_files(df_files, panama_codes):
 
     return merged_dict
 
+def merged_dict_add(df_files):
+    """
+    Create a merged_dict by collecting DataFrames from df_files where
+    the filename or identifier contains 'merged' (case-insensitive).
+    
+    Returns:
+        merged_dict: dict keyed by site_code, value is the merged DataFrame.
+    """
+    merged_dict = {}
+
+    for site_code, file_numbers in df_files.items():
+        for file_number, identifiers in file_numbers.items():
+            for identifier, file_info in identifiers.items():
+                # Check if 'merged' is in the file name or the identifier key
+                filename = file_info.get('File Name', '').lower()
+                if 'merged' in filename or 'merged' in identifier.lower():
+                    merged_dict[site_code] = file_info['DataFrame']
+                    print(f"Added merged file for site {site_code}, file {file_number}, id {identifier}")
+
+    return merged_dict
+
 
 def plot_offset_agreement(df_files, panama_codes):
     """
@@ -815,12 +907,16 @@ def plot_offset_agreement(df_files, panama_codes):
                     'super_flag_count': super_flag_count
                 }
 
-                # Drift check
+                # Drift check — build combined daily DataFrame for review
                 if flag_count > 0 or super_flag_count > 0:
-                    drifting.setdefault(site_code, {})[file_number] = {
-                        'c': file_data.get('c'),
-                        'd': file_data.get('d')
-                    }
+                    drift_df = pd.DataFrame({
+                        'Temp_c_daily': daily['c'],
+                        'Temp_d_daily': daily['d'],
+                        'Difference': diff,
+                        'Flag': diff.apply(lambda x: 'SUPER FLAG' if x > 0.4 else ('FLAG' if x > 0.2 else ''))
+                    })
+                    drift_df.index.name = 'Date'
+                    drifting.setdefault(site_code, {})[file_number] = drift_df
 
                 # Print
                 print(f"Site: {site_code}, File Number: {file_number}")
@@ -845,33 +941,30 @@ def plot_offset_agreement(df_files, panama_codes):
 
 def offload_drifting_files(drifting_dict, review_folder):
     """
-    Save 'c' and 'd' files from drifting_dict into review_folder.
+    Save combined daily drift DataFrames from drifting_dict into review_folder.
+    Each file contains Temp_c_daily, Temp_d_daily, Difference, and Flag columns.
     """
     os.makedirs(review_folder, exist_ok=True)
 
     for site_code, file_numbers in drifting_dict.items():
-        for file_number, file_data in file_numbers.items():
-            for identifier in ['c', 'd']:
-                df = file_data[identifier]['DataFrame']
-                original_name = file_data[identifier].get('File Name', f"{site_code}_{file_number}_{identifier}.csv")
-                save_name = f"{site_code}_{file_number}_{identifier}_DRIFT.csv"
-                save_path = os.path.join(review_folder, save_name)
+        for file_number, drift_df in file_numbers.items():
+            save_name = f"{site_code}_{file_number}_DRIFT.csv"
+            save_path = os.path.join(review_folder, save_name)
 
-                df.to_csv(save_path, index=False)
-                print(f"Offloaded: {save_name}")
-
+            drift_df.to_csv(save_path)
+            print(f"Offloaded: {save_name}")
 
 def plot_merged_temperatures(merged_dict, panama_codes):
     """
     Plot merged temperature time series for each site.
     """
     for site_code, merged_df in merged_dict.items():
-        date_col = 'Date Time, GMT-05:00' if site_code in panama_codes else 'Date Time, GMT-04:00'
+        date_col = 'Date Time, UTC-05:00' if site_code in panama_codes else 'Date Time, UTC-04:00'
 
         merged_df[date_col] = pd.to_datetime(merged_df[date_col])
 
         plt.figure(figsize=(10, 5))
-        plt.plot(merged_df[date_col], merged_df['Temp, °C'], label=f'Site {site_code}', color='b')
+        plt.plot(merged_df[date_col], merged_df['Temperature'], label=f'Site {site_code}', color='b')
 
         plt.xlabel('Month')
         plt.ylabel('Temperature (°C)')
@@ -883,7 +976,7 @@ def plot_merged_temperatures(merged_dict, panama_codes):
         plt.legend()
         plt.grid(True)
         plt.tight_layout()
-        plt.show()
+        #plt.show()
 
 
 def print_start_end_times(df_files, panama_codes, deployment_data_dict):
@@ -923,7 +1016,7 @@ def print_start_end_times(df_files, panama_codes, deployment_data_dict):
         print("No empty DataFrames found.")
 
 
-def generate_trimmed_filenames(df_files, merged_dict, panama_codes, calculations):
+def generate_trimmed_filenames(df_files, merged_dict, panama_codes):
     """
     Generates and prints trimmed filenames with date metadata for 'a' files and merged files.
     Does not save files but prints intended filenames.
@@ -933,7 +1026,7 @@ def generate_trimmed_filenames(df_files, merged_dict, panama_codes, calculations
         for file_number, file_data in site_data.items():
             if 'a' in file_data:
                 df_a = file_data['a']['DataFrame']
-                date_col = 'Date Time, GMT-05:00' if site_code in panama_codes else 'Date Time, GMT-04:00'
+                date_col = 'Date Time, GMT-05:00' if site_code in panama_codes else 'Date Time, UTC-04:00'
                 df_a[date_col] = pd.to_datetime(df_a[date_col])
 
                 first_date = df_a[date_col].iloc[0]
@@ -951,7 +1044,7 @@ def generate_trimmed_filenames(df_files, merged_dict, panama_codes, calculations
 
     # For merged files
     for site_code, df in merged_dict.items():
-        date_col = 'Date Time, GMT-05:00' if site_code in panama_codes else 'Date Time, GMT-04:00'
+        date_col = 'Date Time, UTC-05:00' if site_code in panama_codes else 'Date Time, UTC-04:00'
         df[date_col] = pd.to_datetime(df[date_col])
 
         first_date = df[date_col].iloc[0]
@@ -991,6 +1084,9 @@ def save_offload_files(df_files, merged_dict, panama_codes, output_folder):
                     print(f"Error: {new_date_col} column missing after renaming for {site_code}. Skipping file.")
                     continue
 
+                # Convert date column to datetime before using strftime
+                df_a[new_date_col] = pd.to_datetime(df_a[new_date_col], errors='coerce')
+
                 first_date = df_a[new_date_col].iloc[0]
                 last_date = df_a[new_date_col].iloc[-1]
                 year_month_first = first_date.strftime("%y%m")
@@ -1000,12 +1096,13 @@ def save_offload_files(df_files, merged_dict, panama_codes, output_folder):
                 filename = f"{base_name}.csv"
                 filepath = os.path.join(output_folder, filename)
 
-                df_a.to_csv(filepath, index=False)
+                decimals = 5
+                df_a.to_csv(filepath, index=False, float_format=f"%.{decimals}f")
                 print(f"File saved: {filepath}")
 
     # Save merged files
-    for site_code, merged_df in merged_dict.items():
-        df = merged_df.copy()
+    for site_code, df in merged_dict.items():
+        df = df.copy()
         if site_code in panama_codes:
             date_col = 'Date Time, GMT-05:00'
             new_date_col = 'Date Time, UTC-05:00'
@@ -1024,6 +1121,9 @@ def save_offload_files(df_files, merged_dict, panama_codes, output_folder):
             print(f"Error: {new_date_col} column missing after renaming for {site_code}. Skipping file.")
             continue
 
+        # Convert date column to datetime before using strftime
+        df[new_date_col] = pd.to_datetime(df[new_date_col], errors='coerce')
+
         first_date = df[new_date_col].iloc[0]
         last_date = df[new_date_col].iloc[-1]
         year_month_first = first_date.strftime("%y%m")
@@ -1036,18 +1136,19 @@ def save_offload_files(df_files, merged_dict, panama_codes, output_folder):
         df.to_csv(filepath, index=False)
         print(f"Merged File saved: {filepath}")
 
-def create_and_save_offload_plots(output_folder, plots_path, panama_codes):
+
+def create_and_save_offload_plots(ready_folder, save_dir, panama_codes):
     """
     Reads exported CSV files from `exported_folder_path`, plots temperature time series,
     and saves plots as PNG files to `plots_path`.
 
     Args:
-        output_folder (str): Folder path containing exported CSV files.
+        ready_folder (str): Folder path containing exported CSV files.
         plots_path (str): Folder path where plot images will be saved.
         panama_codes (set or list): Set or list of Panama site codes.
     """
     file_pattern = '*.csv'
-    csv_files = glob.glob(os.path.join(output_folder, file_pattern))
+    csv_files = glob.glob(os.path.join(ready_folder, file_pattern))
     
     for csv_file in csv_files:
         df = pd.read_csv(csv_file)
@@ -1083,9 +1184,9 @@ def create_and_save_offload_plots(output_folder, plots_path, panama_codes):
 
         # Save plot
         plot_file_name = os.path.splitext(os.path.basename(csv_file))[0] + '_plot.png'
-        plot_path = os.path.join(plots_path, plot_file_name)
+        plot_path = os.path.join(save_dir, plot_file_name)
         plt.savefig(plot_path)
-        plt.show()
+        #plt.show()
         
 def trim_dataframe(df_files, site_code, file_number, file_identifier, panama_codes, cutoff_datetime):
     # Check if the file identifier exists for the specified site code and file number
